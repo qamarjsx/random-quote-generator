@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #080846, #86b0c0);
+}
+
+#quote-container {
+    width: 550px;
+    height: 286px;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+}
+
+#quote {
+    display: flex;
+    width: 450px;
+    height: 99px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+}
+
+#quote-icon {
+    font-size: 2rem;
+    color: #080846;
+}
+
+#quote-text {
+    color: #080846;
+    margin-left: 0;
+    font-size: 1.5rem;
+    margin-top: 2px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#quote-author {
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: auto;
+    margin-top: 0px;
+}
+
+#quote-author span {
+    font-size: 1rem;
+    color: #080846;
+}
+
+#btns {
+    width: 450px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#social-btns {
+    margin-right: auto;
+    height: 40px;
+}
+
+#social-btns i {
+    color: #080846;
+    margin-right: 3px;
+    font-size: 2.25rem;
+    cursor: pointer;
+}
+
+#new-btn {
+    font-size: 0.8rem;
+    color: white;
+    background-color: #080846;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#copyright {
+    width: 450px;
+    height: 15px;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    margin-top: 12px;
+}
