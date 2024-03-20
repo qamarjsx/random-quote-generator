@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #080846, #86b0c0);
+    background: linear-gradient(to bottom, #080846, #86b0c0);    
 }
 
 #quote-container {
@@ -90,6 +90,11 @@
     height: 40px;
     width: 100px;
     cursor: pointer;
+}
+
+#new-btn.disabled {
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 #copyright {
