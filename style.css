@@ -1,22 +1,29 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
 #container {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #080846, #86b0c0);    
+    transition: all 1s ease;
+    background: linear-gradient(to bottom, #080846, #86b0c0);
 }
 
 #quote-container {
-    width: 550px;
-    height: 286px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 320px;
     background-color: white;
     border-radius: 3px;
     border: none;
@@ -24,13 +31,14 @@
 
 #quote {
     display: flex;
-    width: 450px;
-    height: 99px;
-    margin: 30px auto;
+    width: 280px;
+    height: 140px;
     margin-bottom: 0px;
 }
 
 #quote-icon {
+    position: relative;
+    bottom: 16px;
     font-size: 2rem;
     color: #080846;
 }
@@ -45,13 +53,11 @@
 }
 
 #quote-author {
-    width: 450px;
-    height: 40px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    margin: auto;
-    margin-top: 0px;
+    width: 300px;
+    text-align: end;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 #quote-author span {
@@ -60,7 +66,9 @@
 }
 
 #btns {
-    width: 450px;
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 300px;
     height: 40px;
     margin: 0 auto;
     display: flex;
@@ -104,4 +112,67 @@
     color: white;
     text-align: center;
     margin-top: 12px;
+}
+
+
+
+@media (min-width: 375px) {
+    #quote-container {
+        width: 355px;
+    }
+}
+
+@media (min-width: 480px) {
+    #quote-container {
+        width: 420px;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        align-items: none;
+        justify-content: none;
+    }
+
+    #quote-author {
+        width: 100%;
+    }
+
+    #quote {
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    #quote-text {
+        margin: 10px 10px 0px 20px;
+        text-align: start;
+    }
+
+    #quote-author {
+        padding-right: 40px;
+    }
+
+    #quote-icon {
+        bottom: 20px;
+        left: 24px;
+        font-size: 2rem;
+        color: #080846;
+    }
+
+    #btns {
+        width: 100%;
+        padding: 0px 40px;
+    }
+}
+
+@media (min-width: 540px) {
+    #quote-container {
+        width: 500px;
+    }
+
+    #quote {
+        width: 100%;
+    }
+
+    #quote-text {
+        text-align: center;
+    }
 }
